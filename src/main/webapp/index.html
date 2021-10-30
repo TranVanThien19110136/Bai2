@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Murach's Java Servlets and JSP</title>
+        <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    </head>
+    <body>
+        <div class="container-ex2">
+            <div class="box-ex2">
+                <form class="form-ex2" action="survey" method="post">
+                    <h1>Survey</h1>
+                    <p class="subheading-ex2">If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+                    
+                    <h3 class="h3-ex2">Your information:</h3>
+                    <label class="label-ex2">First Name</label>
+                    <input class="input-text-ex2" type="text" name="firstName" placeholder="VD: Thien"required>
+                    <label class="label-ex2">Last Name</label>
+                    <input class="input-text-ex2" type="text" name="lastName" placeholder="VD: Tran Van"required>
+                    <label class="label-ex2">Email</label>
+                    <input class="input-text-ex2" type="email" name="email" placeholder="VD: group7@gmail.com"required>
+        
+                    <h3 class="h3-ex2">How did you hear about us?</h3>
+                    <p class="content-ex2">
+                        <input type=radio name="heardFrom" value="Search Engine">Search engine
+                        <input type=radio name="heardFrom" value="Friend">Word of mouth
+                        <input type=radio name="heardFrom" value="Other">Other
+                    </p>
+                    <h3 class="h3-ex2">Would you like to receive announcements about new CDs and special offers?</h3>
+                    <p class="content-ex2"><input type="checkbox" name="wantsUpdates" checked>YES, I'd like that.</p>
+        
+                    <p class="content-ex2">Please contact me by:
+                        <select name="contactVia">
+                            <option value="Both" selected>Email or postal mail</option>
+                            <option value="Email">Email only</option>
+                            <option value="Postal Mail">Postal mail only</option>
+                        </select>
+                    </p>
+                    
+                    <input class="btn-ex2" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
